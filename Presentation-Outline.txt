@@ -1,0 +1,39 @@
+Intro
+What is Kotlin?
+  - Modern Language with Modern Features
+  - 100% Interoperable with Java
+Kotlin examples
+  -
+Who uses Kotlin?
+  - Android
+Why Kotlin on the Server
+  - Why Not?
+Why Kotlin on the Server
+  - Platform / Ecosystem > Language
+  - Node Anecdote
+What is the platform / ecosystem?
+  - JVM
+  - Servlet (Tomcat, Undertoe, Jetty)
+  - APM
+  - Logging / Healthcheck / etc etc
+What is Spring (Framework)?
+  - Spring Core
+  - Spring Web
+  - Spring Data
+  - Spring Auth
+  - Spring Cloud
+What is Spring Boot?
+  - Spring has more knobs than a space shuttle
+  - Out of the box configuration
+  - Embeddable Servlet Container
+Why Kotlin with Spring Boot?
+  - Spring 5 has Kotlin Support
+  - Support for Kotlin Null Safety
+  - Hugh Community. Tons of guides, blogs and examples.
+
+Basic Service Architecture
+Examples
+
+
+How can I get started?
+  * https://start.spring.io/
