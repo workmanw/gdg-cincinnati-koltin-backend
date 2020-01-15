@@ -16,8 +16,8 @@ import javax.validation.ConstraintViolationException
 @ControllerAdvice
 class RestExceptionHandler : ResponseEntityExceptionHandler() {
     @ExceptionHandler(BookNotFoundException::class)
-    protected fun handleNotFound(ex: Exception?, request: WebRequest?): ResponseEntity<Any> {
-        return handleExceptionInternal(ex!!, "Book not found", HttpHeaders(), HttpStatus.NOT_FOUND, request!!)
+    protected fun handleNotFound(ex: BookNotFoundException?, request: WebRequest?): ResponseEntity<Any> {
+        return handleExceptionInternal(ex!!, "Book \"${ex.bookId}\" not found", HttpHeaders(), HttpStatus.NOT_FOUND, request!!)
     }
 
     @ExceptionHandler(

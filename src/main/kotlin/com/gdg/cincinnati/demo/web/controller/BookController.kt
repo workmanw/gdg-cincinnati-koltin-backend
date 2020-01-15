@@ -31,7 +31,7 @@ class BookController(
     @GetMapping("/{id}")
     fun findById(@PathVariable id: Long): Book? {
         return bookRepository.findById(id)
-                .orElseThrow { BookNotFoundException() }
+                .orElseThrow { BookNotFoundException(id) }
     }
 
     @PostMapping
@@ -43,7 +43,7 @@ class BookController(
     @DeleteMapping("/{id}")
     fun delete(@PathVariable id: Long) {
         bookRepository.findById(id)
-                .orElseThrow<RuntimeException> { BookNotFoundException() }
+                .orElseThrow { BookNotFoundException(id) }
         bookRepository.deleteById(id)
     }
 
@@ -53,7 +53,7 @@ class BookController(
             throw BookIdMismatchException()
         }
         bookRepository.findById(id)
-                .orElseThrow<RuntimeException> { BookNotFoundException() }
+                .orElseThrow { BookNotFoundException(id) }
         return bookRepository.save(book)
     }
 }
