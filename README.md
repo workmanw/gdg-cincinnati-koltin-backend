@@ -27,6 +27,18 @@ $ mysql -h 127.0.0.1 -u root --password=my-secret-pw -e "create database \`gdg-d
 
 ## Using
 
+### Build from CLI
+
+```
+mvn clean package
+```
+
+### Run from CLI
+
+```
+java -jar target/demo-0.0.1-SNAPSHOT.jar
+```
+
 ### Book Repository
 
 ```bash
