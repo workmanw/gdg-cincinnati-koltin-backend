@@ -20,12 +20,12 @@ class BookController(
 
     @GetMapping("/title/{title}")
     fun findByTitle(@PathVariable title: String): List<Book?>?  {
-        return bookRepository.findByTitle(title);
+        return bookRepository.findByTitle(title)
     }
 
     @GetMapping("/author/{author}")
     fun findByAuthor(@PathVariable author: String): List<Book?>?  {
-        return bookRepository.findByAuthor(author);
+        return bookRepository.findByAuthor(author)
     }
 
     @GetMapping("/{id}")

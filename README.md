@@ -4,6 +4,10 @@
 
 https://www.meetup.com/gdgcincinnati/events/mxvdjrybccbtb/
 
+### Slides
+
+https://docs.google.com/presentation/d/1lww_kMxtTIYKZ-3b-9BKJKzKIEDxVzMX07pO1LGpde8/edit?usp=sharing
+
 ## Source
 
 The Book Repository section of this was adopted from Baeldung's Example:
